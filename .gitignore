@@ -1,14 +1,64 @@
-Binaries
-DerivedDataCache
-Intermediate
-Saved
-.vscode
-.vs
+# =============================================================
+# Unreal Engine 5 — .gitignore
+# Project: Echoes of Home
+# =============================================================
+
+# -----------------------------------------------
+# Engine-generated directories (NEVER commit)
+# -----------------------------------------------
+Binaries/
+Build/
+DerivedDataCache/
+Intermediate/
+Saved/
+
+# -----------------------------------------------
+# Visual Studio / Rider
+# -----------------------------------------------
+.vs/
 *.VC.db
+*.VC.opendb
 *.opensdf
-*.opendb
 *.sdf
-*.sln
 *.suo
-*.xcodeproj
+*.user
+*.sln
 *.xcworkspace
+*.xcodeproj
+
+# -----------------------------------------------
+# Compiled object files
+# -----------------------------------------------
+*.obj
+*.pch
+*.pdb
+
+# -----------------------------------------------
+# Mac/Linux noise
+# -----------------------------------------------
+.DS_Store
+Thumbs.db
+
+# -----------------------------------------------
+# Unreal crash / log files
+# -----------------------------------------------
+*.log
+*.dmp
+
+# -----------------------------------------------
+# Raw content formats (keep source assets local, ship cooked)
+# -----------------------------------------------
+# Uncomment these if you do NOT want source files in the repo:
+# *.psd
+# *.fbx
+# *.blend
+
+# -----------------------------------------------
+# Packaging output
+# -----------------------------------------------
+Releases/
+
+# -----------------------------------------------
+# n8n / local automation
+# -----------------------------------------------
+.n8n/
